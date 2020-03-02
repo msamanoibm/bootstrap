@@ -2,6 +2,6 @@
 apt -yqq update
 apt -yqq upgrade
 apt -yqq install docker.io vim groovy openjdk-8-jdk curl unzip telnet git
-git clone git@github01.hclpnp.com:michael-samano/bootstrap.git
+git clone https://github.com/msamanoibm/bootstrap.git
 cd bootstrap/bash
 ./bootstrap.sh
