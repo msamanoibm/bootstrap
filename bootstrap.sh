@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo -u ubuntu cp -v -a ubuntu/.bashrc /home/ubuntu/
-cp -v -a root/.bashrc /root/
+sudo -u ubuntu cp -v -a bash/.bashrc /home/ubuntu/
+cp -v -a bash/.bashrc /root/
 
 sudo -u ubuntu cp -v -a bash/.inputrc /home/ubuntu/
 cp -v -a bash/.inputrc /root/
@@ -20,18 +20,18 @@ chmod 755 velocity-se-ibm-install-latest-linux
 sudo -u ubuntu mkdir velocity
 ufw deny 443
 
-docker pull bitnami/nginx:latest
-docker pull mongo:latest
-docker pull urbancode/velocity-se-reporting-ui:latest
-docker pull urbancode/velocity-se-reporting-consumer:latest
-docker pull urbancode/velocity-se-continuous-release-consumer:latest
-docker pull urbancode/velocity-se-reporting-sync-api:latest
-docker pull urbancode/velocity-se-application-api:latest
-docker pull urbancode/velocity-se-release-events-ui:latest
-docker pull urbancode/velocity-se-release-events-api:latest
-docker pull urbancode/velocity-se-security-api:latest
-docker pull urbancode/velocity-se-continuous-release-ui:latest
-docker pull bitnami/rabbitmq:latest
-docker pull urbancode/velocity-se-multi-app-pipeline-api:latest
-docker pull urbancode/velocity-se-continuous-release-poller:latest
-docker pull urbancode/velocity-se-rcl-web-client:latest
+docker pull bitnami/nginx:1.14
+docker pull mongo:3.6
+docker pull bitnami/rabbitmq:3.7.9
+docker pull urbancode/velocity-se-reporting-ui:1.4.0.102
+docker pull urbancode/velocity-se-reporting-consumer:1.4.5.941
+docker pull urbancode/velocity-se-continuous-release-consumer:1.4.5.941
+docker pull urbancode/velocity-se-reporting-sync-api:1.4.5.941
+docker pull urbancode/velocity-se-application-api:1.4.5.941
+docker pull urbancode/velocity-se-release-events-ui:1.4.5.941
+docker pull urbancode/velocity-se-release-events-api:1.4.5.941
+docker pull urbancode/velocity-se-security-api:1.4.5.941
+docker pull urbancode/velocity-se-continuous-release-ui:1.4.5.941
+docker pull urbancode/velocity-se-multi-app-pipeline-api:1.4.5.941
+docker pull urbancode/velocity-se-continuous-release-poller:1.4.5.941
+docker pull urbancode/velocity-se-rcl-web-client:1.4.0.46
